@@ -33,7 +33,7 @@ if __name__ == '__main__':
             #Touch changelog
             open(__programs__ + '/.changelog', 'a').close()
         except Exception, e:
-            xbmc.log('InternetPVR: Could not retrieve audo changelog:', level=xbmc.LOGERROR)
+            xbmc.log('AUDO: Could not retrieve audo changelog:', level=xbmc.LOGERROR)
             xbmc.log(str(e), level=xbmc.LOGERROR)
 
     # Shutdown audo
