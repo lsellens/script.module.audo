@@ -2,7 +2,6 @@
 import xbmc
 import xbmcaddon
 import os
-
 import xbmcvfs
 import utils
 
