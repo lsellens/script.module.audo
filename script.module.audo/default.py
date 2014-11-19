@@ -18,9 +18,6 @@ except:
     xbmc.log('AUDO: Could not detect service addon:', level=xbmc.LOGERROR)
     exit()
 
-#Audo Programs addon info.
-__programs__ = xbmc.translatePath(xbmcaddon.Addon(id='script.module.audo-programs').getAddonInfo('path'))
-
 if __name__ == '__main__':
 
     # Shutdown audo
