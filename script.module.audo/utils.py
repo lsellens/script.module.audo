@@ -3,9 +3,9 @@ import time
 import xbmc
 import xbmcgui
 import xbmcplugin
-from addon.common.addon import Addon
+import xbmcaddon
 
-__programs__ = Addon('script.module.audo-programs')
+__programs__ = xbmcaddon.Addon(id='script.module.audo-programs')
 
 class TextBox:
     # constants
@@ -27,7 +27,7 @@ class TextBox:
         heading = "AUDO Programs - Changelog"
         self.win.getControl(self.CONTROL_LABEL).setLabel(heading)
         # set text
-        root = __programs__.get_path()
+        root = __programs__.getAddonInfo('path')
         faq_path = os.path.join(root, 'changelog.txt')
         f = open(faq_path)
         text = f.read()
