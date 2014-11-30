@@ -1,5 +1,5 @@
 0.0.3
-- display programs changelog in addon settings
+- added ability to view changelogs in addon settings
 
 0.0.2
 - removed openelec requirement should work on all linux xbmc installs
