@@ -13,7 +13,7 @@ __selfpath__   = xbmcaddon.Addon(id='script.module.audo').getAddonInfo('path')
 try:
     __addon__      = xbmcaddon.Addon(id='script.service.audo')
     __addonpath__  = __addon__.getAddonInfo('path')
-    __start__      = xbmc.translatePath(__addonpath__ + '/resources/audo.py')
+    __start__      = xbmc.translatePath(__addonpath__ + '/service.py')
 except:
     xbmc.executebuiltin("XBMC.Notification('audo', 'Install audo service!', '5000', %s)" % ( __selfpath__ + '/icon.png'))
     xbmc.log('AUDO: Could not detect service addon:', level=xbmc.LOGERROR)
@@ -22,9 +22,9 @@ except:
 if __name__ == '__main__':
 
     # Shutdown audo
-    system("kill `ps | grep -E 'python.*script.module.audo' | awk '{print $1}'`")
+    system("kill `ps | grep -E 'python.*script.*.audo' | awk '{print $1}'`")
 
-    #Open settings dialog
+    # Open settings dialog
     __addon__.openSettings()
 
     # Restart audo
