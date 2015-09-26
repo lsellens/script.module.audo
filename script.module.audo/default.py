@@ -1,5 +1,4 @@
 #
-from os import system
 import xbmc
 import xbmcaddon
 import xbmcvfs
@@ -20,14 +19,15 @@ except:
     exit()
 
 if __name__ == '__main__':
-
+    
     # Shutdown audo
-    system("kill `ps | grep -E 'python.*script.*.audo' | awk '{print $1}'`")
-
+    __addon__.setSetting(id='SHUTDOWN', value='true')
+    
     # Open settings dialog
     __addon__.openSettings()
-
+    
     # Restart audo
+    __addon__.setSetting(id='SHUTDOWN', value='false')
     try:
         xbmc.executebuiltin('XBMC.RunScript(%s)' % __start__, True)
     except Exception, e:
