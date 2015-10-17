@@ -1,3 +1,6 @@
+0.0.5
+- addon now requires helix or above
+
 0.0.4
 - modified shutdown method
 
