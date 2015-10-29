@@ -1,3 +1,7 @@
+0.0.5
+- modified restart method after settings change
+- addon now requires helix or above
+
 0.0.4
 - modified shutdown method
 
