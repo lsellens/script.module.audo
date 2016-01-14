@@ -12,7 +12,7 @@ try:
     __addon__      = xbmcaddon.Addon(id='script.service.audo')
     __addonpath__  = __addon__.getAddonInfo('path')
 except:
-    xbmc.executebuiltin("XBMC.Notification(audo, Install audo service!, 15000, %s)" % ( __icon__))
+    xbmc.executebuiltin("XBMC.Notification(audo, Install audo service!, 15000, %s)" % __icon__)
     xbmc.log('AUDO: Could not detect service addon:', level=xbmc.LOGERROR)
     exit()
 
