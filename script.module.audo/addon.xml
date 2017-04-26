@@ -18,5 +18,12 @@
     <description lang="sv">Vänligen installera audo service tillägget. Detta kommer inte göra något på egen hand.</description>
     <language>en hy_AM ca_ES nl fr de fa pl pt pt_BR es sv tr</language>
     <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/script.module.audo</source>
+    <news>0.0.5- addon now requires helix or above</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
