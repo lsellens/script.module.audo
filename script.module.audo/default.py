@@ -4,7 +4,7 @@ import xbmcaddon
 
 __scriptname__ = "audo"
 __author__     = "lsellens"
-__url__        = "http://lsellens.openelec.tv"
+__url__        = "https://github.com/lsellens/xbmc.addons"
 __icon__   = xbmcaddon.Addon(id='script.module.audo').getAddonInfo('icon')
 
 #try to get service addon info or send notification to install it.
